@@ -1,52 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            color: white;
-            background: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phạm Văn Dự</title>
+    <meta name="description" content="phamvandu" />
+    <meta name="theme-color" content="#000">
+
+    <meta name="author" content="Phạm Văn Dự">
+    <meta property="og:locale" content="vi_VN">
+    <link rel="icon" href="assets/logo.ico">
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- #MAIN -->
+    <main>
+        <!-- SIDEBAR -->
+        <aside class="sidebar" data-sidebar>
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Freelancer</p>
-    </header>
+            <div class="sidebar-info">
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating clean and modern web e
+                <figure class="avatar-box">
+                    <img src="assets/images/avatar.png" alt="Phạm Văn Dự" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="realname" title="Phạm Văn Dự">Phạm Văn Dự</h1>
+                    <!-- <p class="title">Fullstack Developer</p> -->
+                    <a href="assets/docs/My_CV.pdf" target="_blank">
+                        <p class="title">CV</p>
+                    </a>
+                </div>
+
+                <!-- button will appear in mobile  -->
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:phamvandu77tphcm@gmail.com"
+                                class="contact-link">phamvandu77tphcm@gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+84918399443" class="contact-link">+84 379614995</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="2000-06-18">Apr 09, 2003</time>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Ho Chi Minh City</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://github.com/VanDu178" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/du.phamvan.982292" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT  -->
+
+        <div class="main-content">
+
+            <!-- #NAVBAR -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <!-- <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Project</button>
+                    </li> -->
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- #ABOUT  -->
+
+            <article class="about active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I am a Full-Stack Developer skilled in Node.js and React.js, building scalable,
+                        high-performance web applications with seamless user experiences and efficient backend
+                        solutions.
+                    </p>
+                </section>
+
+
+                <!--
+          - service
+        -->
+
+                <header>
+                    <h2 class="h2 article-title">What i'm doing</h2>
+                </header>
+
+                <section class="service">
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/web-icon.svg" alt="Web Developer" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title web-tag">Web Development</h4>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/frontend-icon.svg" alt="Frontend Developer" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title frontend-tag">Frontend Development</h4>
+                            </div>
+
+                        </li>
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/backend-icon.svg" alt="Backend Developer" width="35">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title backend-tag">Backend Development</h4>
+                            </div>
+
+                        </li>
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/database-icon.svg" alt="Database Management" width="35">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title database-tag">Database Management</h4>
+                            </div>
+
+                        </li>
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/cloudndevops-icon.svg" alt="Cloud & Devops" width="35">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title cloudndevops-tag">Cloud & DevOps</h4>
+                            </div>
+
+                        </li>
+                    </ul>
+
+
+
+                </section>
+
+                <header>
+                    <h2 class="h2 article-title">Main Skill</h2>
+                </header>
+
+                <section class="main-skills">
+
+                    <div class="skills-categories">
+
+                        <div class="skills-category">
+                            <h4 class="h4 skills-header">Language</h4>
+                            <ul class="skills-list">
+                                <li class="skills-item">JavaScript</li>
+                                <li class="skills-item">TypeScript</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-category">
+                            <h4 class="h4 skills-header">Frontend</h4>
+                            <ul class="skills-list">
+                                <li class="skills-item">Reactjs</li>
+                                <li class="skills-item">Html</li>
+                                <li class="skills-item">Css</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-category">
+                            <h4 class="h4 skills-header">Backend</h4>
+                            <ul class="skills-list">
+                                <li class="skills-item">Nodejs</li>
+                                <li class="skills-item">Expressjs</li>
+                                <li class="skills-item">Rest API</li>
+                            </ul>
+                        </div>
+                        <div class="skills-category">
+                            <h4 class="h4 skills-header">Database</h4>
+                            <ul class="skills-list">
+                                <li class="skills-item">MongoDB</li>
+                                <li class="skills-item">MySQL</li>
+                                <li class="skills-item">SQL</li>
+                            </ul>
+                        </div>
+                        <div class="skills-category">
+                            <h4 class="h4 skills-header">Cloud & DevOps</h4>
+                            <ul class="skills-list">
+                                <li class="skills-item">Docker</li>
+                                <li class="skills-item">AWS</li>
+                                <li class="skills-item">Portman</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- #CONTACT  -->
+
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.5418937242!2d106.36490168394415!3d10.754617433196007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1713449756793!5m2!1sen!2s"
+                            width="400" height="300" style="border:0px;" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form id="contactForm" onsubmit="sendEmail(event)" data-toggle="valiator" class="form contactForm"
+                        data-form>
+
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Full name*"
+                                required data-form-input>
+
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Email address*"
+                                required data-form-input>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="Your Subject.." required data-form-input>
+                        </div>
+
+                        <textarea id="message" name="message" rows="4" class="form-input" placeholder="Your Message.."
+                            required data-form-input></textarea>
+
+                        <button class="form-btn submitBnt" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+                    <div id="notification" class="notification"></div>
+
+                </section>
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
